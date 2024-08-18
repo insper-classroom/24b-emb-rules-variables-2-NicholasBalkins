@@ -9,12 +9,13 @@ void foo(void) {
     a = a + 1; // acessa variavel global
 }
 
-void main(void) {
+int main(void) {
     while (1) {
         foo();
         
         if (a > 5) {
             b = 1;
+            break;
         }
     }
 }
